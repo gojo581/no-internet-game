@@ -66,7 +66,7 @@ function main(){
         <p id="gameOver">Game over!!!!</p>
         <p id="result">Your score is...${score}</p>
         <p id="best">Your best score is....${best}</p>
-       <center> <button id="tryAgain" onclick="window.location.replace('file:///C:/Users/gadi1/OneDrive/%D7%A9%D7%95%D7%9C%D7%97%D7%9F%20%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%94/no%20internet%20game%201/index.html')"> try again </button></center>
+       <center> <button id="tryAgain" onclick="window.location.replace('https://gojo581.github.io/no-internet-game/')"> try again </button></center>
         </div>
        `
         let gameSound=new Audio('game over sound.wav')
