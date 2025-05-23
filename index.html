@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t-rex running</title>
+</head>
+<body >
+    <center><h1 id="text">t-rex running</h1></center>
+    <h1 id="score">Your score: 0</h1>
+<img id="t-rex" src="t-rex.png">
+<img id="cactus" src="cactus.png">
+<img id="floor" src="floor.png">
+<img src="clouds.png"id="cloud" >
+
+<img id="backround" src="background.png" >
+<script src="index.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>שינוי גודל רנדומלי</title>
+  <style>
+    #myImage {
+      transition: width 0.3s, height 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+
+  <br>
+  <button onclick="resizeImage()">שנה גודל רנדומלי</button>
+
+
+
+</body>
+</html>
+<script>function resizeImage() {
+  const img = document.getElementById("cactus");
+
+
+  const randomWidth = Math.floor(Math.random()* 130) + 50;
+  const randomHeight = Math.floor(Math.random() * 130) + 50;
+
+  img.style.width = randomWidth + "px";
+  img.style.height = randomHeight + "px";
+}
+setInterval(resizeImage, 2500);</script>

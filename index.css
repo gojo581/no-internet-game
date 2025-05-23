@@ -1,0 +1,134 @@
+body{height:100vh;}
+body{
+    overflow: hidden;
+
+    background-size: cover;
+}
+
+#floor{
+
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom:0;
+    left: 0;
+}
+
+#t-rex{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 27px;
+    left: 60px;
+
+}
+#cactus{
+    width: 75px;
+    height: 105px;
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+    animation:drive;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drive{
+    0%{right: 0; transform: translateX(100%);}
+
+
+    100%{right: 100%; transform: translateX(-100%);}
+
+}
+
+.jump{
+    animation-name: jump;
+    animation-duration: 1s;
+  
+}
+
+
+@keyframes jump{
+    0%{
+        bottom: 50px;
+    }
+    50%{
+        bottom: 260px;
+    }
+    100%{
+        bottom: 50px;
+    }
+}
+
+
+
+#gameOver{
+    text-align: center;
+    color: green;
+    font-size: 100px;
+}
+
+
+#result{
+    text-align: center;
+    color:red;
+    font-size: 50px;
+}
+
+
+#best{
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+}
+
+#tryAgain{
+
+font-size: 20px;
+background-color: green;
+}
+#backround{
+    width: 100%;
+    height: 100%;
+
+}
+@keyframes down{
+    0%{
+        bottom: 27px;
+    }
+    100%{
+        bottom: 27px;
+    }
+}
+.down{
+    animation-name: down;
+    animation-duration: 0.1s;
+  
+}
+h1{
+font-family: 'Courier New', Courier, monospace;
+animation-name: txt;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+@keyframes txt{
+    0%{color: black;
+
+    }
+20%{color: darkgray;}
+40%{color: gray;}
+60%{color: lightgray;}
+80%{color: gray;}
+100%{color: darkgray;}
+}
+
+#cloud{
+        width: 600px;
+    height: 150px;
+    position: absolute;
+    bottom: 500px;
+    right: 0;
+    animation:drive;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
