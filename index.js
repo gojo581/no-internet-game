@@ -68,6 +68,7 @@ function main(){
         <p id="best">Your best score is....${best}</p>
        <center> <button id="tryAgain" onclick="window.location.replace('https://gojo581.github.io/no-internet-game/')"> try again </button></center>
         </div>
+        <button style="background-color: green; width: 60px; height: 60px;" onclick="window.location.replace('https://gojo581.github.io/games/')">come back</button>
        `
         let gameSound=new Audio('game over sound.wav')
         gameSound.play()
